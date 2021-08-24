@@ -1,10 +1,11 @@
 @use './variables.scss' as *;
 @use './navbar.scss';
 @use './custom_class.scss';
+@use './hero.scss';
+@use './footer.scss';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,600;1,700&display=swap');
 body {
   font-family: $base-font;
-  background-color: white;
 }
 
 * {

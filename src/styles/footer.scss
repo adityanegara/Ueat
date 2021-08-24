@@ -1,0 +1,21 @@
+@use './variables.scss' as *;
+footer {
+  border: none !important;
+  min-height: 5vh;
+  background-color: $black-color;
+  h4 {
+    a {
+      text-decoration: none;
+      color: $white-color;
+      transition: ease-in 0.2s;
+    }
+    a:hover {
+      color: $base-color;
+    }
+    border: none !important;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

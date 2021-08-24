@@ -28,6 +28,7 @@ navbar-list {
   }
 
   a {
+    font-size: 0.8em;
     display: block;
     min-width: 44px;
     min-height: 44px;
@@ -69,6 +70,7 @@ navbar-list {
     overflow-x: hidden;
   }
   .nav-links {
+    z-index: 10;
     position: fixed;
     right: 0px;
     height: 92vh;
