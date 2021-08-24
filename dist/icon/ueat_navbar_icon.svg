@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.709" height="50" viewBox="0 0 85.709 50">
+  <g id="ueat_navbar_icon" transform="translate(-7.742 -5.214)">
+    <g id="Group_2" data-name="Group 2" transform="translate(8.688 5.214)">
+      <text id="U" transform="translate(-0.237 38)" fill="#ff7517" font-size="39" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">U</tspan></text>
+      <g id="fork" transform="translate(-0.946 4.268)">
+        <path id="Rectangle_2" data-name="Rectangle 2" d="M0,0H13.209a0,0,0,0,1,0,0V0A3.236,3.236,0,0,1,9.973,3.236H3.236A3.236,3.236,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 5.542)" fill="#ff7517"/>
+        <path id="Rectangle_4" data-name="Rectangle 4" d="M1.618,0h0A1.618,1.618,0,0,1,3.236,1.618V5.542a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1.618A1.618,1.618,0,0,1,1.618,0Z" transform="translate(5.236)" fill="#ff7517"/>
+        <path id="Rectangle_5" data-name="Rectangle 5" d="M1.618,0h0A1.618,1.618,0,0,1,3.236,1.618V5.542a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1.618A1.618,1.618,0,0,1,1.618,0Z" transform="translate(9.973)" fill="#ff7517"/>
+        <path id="Rectangle_6" data-name="Rectangle 6" d="M1.618,0h0A1.618,1.618,0,0,1,3.236,1.618V5.542a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1.618A1.618,1.618,0,0,1,1.618,0Z" fill="#ff7517"/>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(19.464 4.048)">
+        <path id="spoon" d="M4.915,0C7.63,0,9.831,2.871,9.831,6.412s-2.2,6.412-4.915,6.412S0,9.954,0,6.412,2.2,0,4.915,0Z" transform="translate(0 0)" fill="#ff7517"/>
+        <path id="Path_7" data-name="Path 7" d="M-.63-1.317c.3.367-.937,2.042-1.017,3.876A3.651,3.651,0,0,0-1.511,3.69c.289,1.1,1.058,1.74.643,1.74C-1.4,5.43-2.4,4.343-2.4,2.559S-.933-1.684-.63-1.317Z" transform="translate(3.772 4.226)" fill="#eee"/>
+      </g>
+    </g>
+    <text id="eat" transform="translate(39.451 42.214)" fill="#ff7517" font-size="36" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">eat</tspan></text>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="12" height="2" transform="translate(8.451 14.214)" fill="#ff7517"/>
+  </g>
+</svg>

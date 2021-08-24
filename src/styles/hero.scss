@@ -28,14 +28,15 @@
   .hero-headline {
     h1 {
       width: 80%;
+      font-weight: bold;
     }
     color: $base-color;
     grid-area: heroHeadline;
     justify-content: center;
     display: flex;
     align-items: flex-end;
-    font-size: 1.8em;
-    font-weight: $font-bold;
+    font-size: 2.2em;
+
     letter-spacing: 5px;
   }
   .hero-description {
@@ -49,7 +50,7 @@
     display: flex;
 
     align-items: center;
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .download-button {
@@ -97,7 +98,7 @@
     }
     margin-top: 5vh;
     align-items: flex-start !important;
-    font-size: 1.2em !important;
+    font-size: 1.5em !important;
   }
 
   .hero-description {
@@ -105,7 +106,7 @@
     margin-top: 3vh;
     font-size: 1.5em !important;
     align-items: flex-start !important;
-    font-size: 1.5em !important;
+    font-size: 1.2em !important;
   }
 
   .download-button {
