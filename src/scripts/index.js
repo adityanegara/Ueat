@@ -15,7 +15,8 @@ navSlide();
 
 const nav = document.querySelector('navbar-list');
 const timeline = gsap.timeline();
-    timeline.from('#hero-section', 0.5 , {backgroundColor : "white"});
+    // timeline.fromTo('#hero-section', 1 , {height : "0%"}, {height: "100%"});
+    timeline.fromTo('#hero-section', 1 , {width : "0%"}, {width: "100%", ease: "power1"});
     timeline.fromTo('.hero-image', 0.5, { opacity : "0%"}, {opacity: "100%", ease:Power2.easeInOut});
     timeline.fromTo('.hero-headline', 0.5, { opacity : "0%"}, {opacity: "100%", ease:Power2.easeInOut});
     timeline.fromTo('.hero-description', 0.5, { opacity : "0%"}, {opacity: "100%", ease:Power2.easeInOut});
