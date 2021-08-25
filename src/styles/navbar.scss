@@ -11,7 +11,14 @@ navbar-list {
 }
 
 .logo {
-  margin-top: 1vh;
+  h1 {
+    .blue {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    font-size: 1.7rem;
+    color: $base-color;
+  }
 }
 
 .nav-links {

@@ -2,9 +2,7 @@
 
 hero-section {
   display: grid;
-  margin-top: 8vh;
   background: $black-color; /* fallback for old browsers */
-
   color: $white-color;
   width: 100%;
   min-height: 87vh;
@@ -81,7 +79,7 @@ hero-section {
 }
 
 @media only screen and (max-width: 768px) {
-  #hero-section {
+  hero-section {
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:

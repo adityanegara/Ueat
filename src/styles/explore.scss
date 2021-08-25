@@ -1,0 +1,15 @@
+@use './variables.scss' as *;
+
+.loading {
+  display: flex;
+  padding-top: 8vh;
+  justify-content: center;
+  .round {
+    z-index: -1;
+    border-radius: 50%;
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: $base-color;
+  }
+}

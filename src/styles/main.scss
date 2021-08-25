@@ -3,6 +3,7 @@
 @use './custom_class.scss';
 @use './hero.scss';
 @use './footer.scss';
+@use './explore.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap');
 body {
   font-family: $base-font;
@@ -12,4 +13,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+main {
+  margin-top: 8vh;
+  min-height: 87vh;
 }

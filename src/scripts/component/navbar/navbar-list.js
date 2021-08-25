@@ -15,7 +15,7 @@ class NavbarList extends HTMLElement {
     });
     const newHTML = `
         <div class = "logo">
-            <img src ="./icon/ueat_navbar_icon.png"></img>
+          <h1 tabindex="0"><span class="blue">U</span>eat</h1>
         </div> 
         <button id ="navbar-button" class="burger"  aria-label="To Navigation Button">
           <div class="line1"></div>
