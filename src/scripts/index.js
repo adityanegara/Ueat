@@ -1,3 +1,4 @@
+import 'regenerator-runtime';
 import "../styles/main.scss"
 import './component/navbar/navbar-list';
 import './component/hero/HeroContainer';
