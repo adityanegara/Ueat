@@ -18,6 +18,16 @@ const navSlide = () => {
   burger.addEventListener('click', () => {
     animateBurger(nav, navLinks, burger);
   });
+  _closeWhenLinkClicked();
 };
 
+const _closeWhenLinkClicked = () =>{
+  const navbarLinks = document.querySelectorAll('navbar-item');
+  console.log(navbarLinks);
+  navbarLinks.forEach(navbarLink => {
+      navbarLink.addEventListener('click', () => {
+        document.querySelector('.burger').click();
+      });
+  });
+}
 export default navSlide;
