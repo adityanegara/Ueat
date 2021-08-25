@@ -18,7 +18,12 @@ const navSlide = () => {
   burger.addEventListener('click', () => {
     animateBurger(nav, navLinks, burger);
   });
-  _closeWhenLinkClicked();
+  let windowSize = window.matchMedia("(max-width: 768px)")
+  if(windowSize.matches){
+    console.log('768px')
+    _closeWhenLinkClicked();
+  }
+  
 };
 
 const _closeWhenLinkClicked = () =>{
