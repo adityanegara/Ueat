@@ -1,4 +1,5 @@
 import {animateLoading} from '../../utils/page-animation';
+import RestaurantSource from '../../model/restaurant-source';
 const ExplorePage = {
     async render(){
         return `
@@ -12,6 +13,10 @@ const ExplorePage = {
 
     async afterRender(){
         animateLoading();
+        const restaurants = await RestaurantSource.restaurantList();
+        if(restaurants){
+            console.log(restaurants);
+        }
     }
 }
 

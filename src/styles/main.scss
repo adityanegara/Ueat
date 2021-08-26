@@ -1,9 +1,9 @@
-@use './variables.scss' as *;
-@use './navbar.scss';
-@use './custom_class.scss';
-@use './hero.scss';
-@use './footer.scss';
-@use './explore.scss';
+@use './utils/variables.scss' as *;
+@use './component/navbar.scss';
+@use './utils/custom_class.scss';
+@use './component/hero.scss';
+@use './component/footer.scss';
+@use './component/explore.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap');
 body {
   font-family: $base-font;
