@@ -3,6 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 module.exports = {
      entry : {
+         vendor : path.resolve(__dirname, 'src/scripts/vendor/gsap.js'),
          main : path.resolve(__dirname, 'src/scripts/index.js'),
      },
      plugins : [
