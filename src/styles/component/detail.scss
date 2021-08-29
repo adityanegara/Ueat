@@ -180,13 +180,18 @@
       'detailReviews  detailReviews';
     .restaurant-detail-information {
       .restaurant-detail-description {
-        width: 100%;
+        margin-left: 4vw;
         margin-left: auto;
         margin-right: auto;
         font-size: 1em;
       }
 
+      .restaurant-detail-location {
+        margin-left: 4vw;
+      }
+
       .restaurant-detail-categories {
+        margin-left: 4vw;
         margin-bottom: 3vh;
       }
     }
