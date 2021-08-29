@@ -4,19 +4,21 @@ import { createRestaurantTemplate,  createLoadingTemplate} from '../templates/te
 const ExplorePage = {
     async render(){
         return `
+        <div class="loading-animation"></div>
         <div class ="restaurants-list">
         </div>
         `
     },
 
     async afterRender(){
+        const loadingAnimation = document.querySelector('.loading-animation');
         const restaurantsContainer = document.querySelector('.restaurants-list');
-        restaurantsContainer.innerHTML = createLoadingTemplate();
+        loadingAnimation.innerHTML = createLoadingTemplate();
         animateLoading();
         const restaurants = await RestaurantSource.restaurantList();
         console.log(restaurants)
         if(restaurants){
-            restaurantsContainer.innerHTML = '';
+            loadingAnimation.innerHTML = '';
             restaurants.forEach((restaurant) => {
                 restaurantsContainer.innerHTML += createRestaurantTemplate(restaurant);
               });
