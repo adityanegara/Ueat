@@ -5,6 +5,7 @@
 @use './component/footer.scss';
 @use './component/explore.scss';
 @use './component/restaurants-list.scss';
+@use './component/detail.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap');
 body {
   font-family: $base-font;
