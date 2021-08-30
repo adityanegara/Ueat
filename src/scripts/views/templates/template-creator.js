@@ -87,6 +87,9 @@ const createDetailRestaurantTemplate = (restaurant) => `
       </div>
       <div class="form-group">
         <p>Give Review</p>
+        <div class="review-warning  ">
+          <p class="review-warning-text">Name field is required!</p>
+        </div>
         <div class="form form-name">
           <input type="text" id="give-review-name" class="form__input" autocomplete="off" placeholder=" ">
           <label for="give-review-name" class="form__label">Name</label>

@@ -156,6 +156,25 @@
         margin-bottom: 2vh;
         font-size: 1.5em;
       }
+      .review-warning-success {
+        background-color: $success-color;
+      }
+
+      .review-warning-danger {
+        background-color: $danger-color;
+      }
+      .review-warning {
+        opacity: 0;
+        height: 5vh;
+        font-weight: $font-regular;
+        padding-top: 0.4em;
+        border-radius: 10px;
+        margin-bottom: 2vh;
+        p {
+          font-size: 1em;
+          color: $pure-white-color;
+        }
+      }
 
       .give-review-button {
         margin-top: 2vh;
