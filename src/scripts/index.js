@@ -1,17 +1,16 @@
 import 'regenerator-runtime';
-import "../styles/main.scss"
+import '../styles/main.scss';
 import './component/navbar/navbar-list';
 import './component/hero/HeroContainer';
 import links from './component/navbar/navbar-links';
 import navSlide from './utils/navbar-animation';
 import App from './views/app';
 
-
 const renderNavbar = (navbarLinks) => {
-    const navbarContainer = document.getElementById('nav-container');
-    const navbarListElement = document.createElement('navbar-list');
-    navbarListElement.navbarLinks = navbarLinks;
-    navbarContainer.appendChild(navbarListElement);
+  const navbarContainer = document.getElementById('nav-container');
+  const navbarListElement = document.createElement('navbar-list');
+  navbarListElement.navbarLinks = navbarLinks;
+  navbarContainer.appendChild(navbarListElement);
 };
 
 const main = document.querySelector('main');
@@ -20,14 +19,9 @@ renderNavbar(links);
 navSlide();
 
 window.addEventListener('load', () => {
-    app.renderPage();
+  app.renderPage();
 });
 
 window.addEventListener('hashchange', () => {
-    app.renderPage();
+  app.renderPage();
 });
-
-
-
-  
-

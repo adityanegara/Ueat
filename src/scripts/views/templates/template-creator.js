@@ -1,40 +1,38 @@
-import CONFIG from "../../globals/config";
+import CONFIG from '../../globals/config';
 
-const createLoadingTemplate = () => {
-    return`
+const createLoadingTemplate = () => `
     <div class ="loading">
         <div class="round"></div>
         <div class="round"></div>
         <div class="round"></div>
     </div>
-    `
-}
+    `;
 
-const _renderCategories = (categories) =>{
+const _renderCategories = (categories) => {
   let categoriesElement = '';
   categories.forEach((category, i) => {
-    if(i == categories.length-1){
-      categoriesElement += `${category.name}`
-    }else{
-      categoriesElement += `${category.name}, `
+    if (i === categories.length - 1) {
+      categoriesElement += `${category.name}`;
+    } else {
+      categoriesElement += `${category.name}, `;
     }
   });
   return categoriesElement;
-}
+};
 
-const renderMenus = (menus) =>{
+const renderMenus = (menus) => {
   let menusElement = ``;
   menus.forEach((menu, i) => {
-    menusElement +=  `<li>${i+1}. ${menu.name}</li>`
+    menusElement += `<li>${i + 1}. ${menu.name}</li>`;
   });
   return menusElement;
-}
+};
 
-const _renderReviews = (reviews) =>{
+const _renderReviews = (reviews) => {
   let reviewsElement = ``;
-  reviews.forEach(review => {
-    reviewsElement += 
-    `<div class="review">
+  reviews.forEach((review) => {
+    reviewsElement
+    += `<div class="review">
       <div class="reviewer-avatar">
         <img class="reviewer-avatar"  src="./img/avatar.svg" alt="">
       </div>
@@ -44,12 +42,11 @@ const _renderReviews = (reviews) =>{
           ${review.review}
       </p>
       <p class="reviewer-date">Reviewed at : ${review.date}</p>
-  </div>`
+  </div>`;
   });
   return reviewsElement;
-}
-const createDetailRestaurantTemplate = (restaurant) =>{
-    return `
+};
+const createDetailRestaurantTemplate = (restaurant) => `
     <div class="restaurant-detail-image">
       <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="">
     </div>
@@ -90,11 +87,9 @@ const createDetailRestaurantTemplate = (restaurant) =>{
       </div>
    
     </div>
-  `
-}
+  `;
 
-const createRestaurantTemplate = (restaurant) =>{
-    return`<div class="restaurant">
+const createRestaurantTemplate = (restaurant) => `<div class="restaurant">
                 <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" 
                 alt="restaurant image ${restaurant.name}">
                 <p class="restaurant-name">${restaurant.name}</p>
@@ -106,12 +101,11 @@ const createRestaurantTemplate = (restaurant) =>{
                     <p class="restaurant-city">City : ${restaurant.city}</p>
                 </div> 
                 <a class="restaurant-detail-link" href="${`/#/detail/${restaurant.id}`}">Detail</a>
-            </div>`
-}
+            </div>`;
 
 export {
-    createLoadingTemplate,
-    createRestaurantTemplate,
-    createDetailRestaurantTemplate,
-    renderMenus
-}
+  createLoadingTemplate,
+  createRestaurantTemplate,
+  createDetailRestaurantTemplate,
+  renderMenus,
+};

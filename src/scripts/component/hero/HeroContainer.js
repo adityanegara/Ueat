@@ -1,14 +1,14 @@
 class HeroSection extends HTMLElement {
-    connectedCallback(){
-        this.headline = this.getAttribute('headline') || null;
-        this.description = this.getAttribute('description') || null;
-        this.buttonCaption = this.getAttribute('button-caption') || null;
-        this.image = this.getAttribute('image') || null;
-        this.render();
-    };
+  connectedCallback() {
+    this.headline = this.getAttribute('headline') || null;
+    this.description = this.getAttribute('description') || null;
+    this.buttonCaption = this.getAttribute('button-caption') || null;
+    this.image = this.getAttribute('image') || null;
+    this.render();
+  }
 
-    render(){
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <div class="hero-image">
             <img src="${this.image}" alt="" />
         </div>
@@ -20,8 +20,8 @@ class HeroSection extends HTMLElement {
       </div>
       <div class="download-button">
         <button>${this.buttonCaption}</button>
-      </div>`
-    }
+      </div>`;
+  }
 }
 
-customElements.define('hero-section', HeroSection)
+customElements.define('hero-section', HeroSection);

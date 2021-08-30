@@ -1,4 +1,3 @@
-  
 const animateBurger = (navElement, navLinksElement, burgerElement) => {
   navElement.classList.toggle('nav-active');
   navLinksElement.forEach((link, index) => {
@@ -11,6 +10,16 @@ const animateBurger = (navElement, navLinksElement, burgerElement) => {
   burgerElement.classList.toggle('toggle');
 };
 
+const _closeWhenLinkClicked = () => {
+  const navbarLinks = document.querySelectorAll('navbar-item');
+  console.log(navbarLinks);
+  navbarLinks.forEach((navbarLink) => {
+    navbarLink.addEventListener('click', () => {
+      document.querySelector('.burger').click();
+    });
+  });
+};
+
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
@@ -18,21 +27,11 @@ const navSlide = () => {
   burger.addEventListener('click', () => {
     animateBurger(nav, navLinks, burger);
   });
-  let windowSize = window.matchMedia("(max-width: 768px)")
-  if(windowSize.matches){
-    console.log('768px')
+  const windowSize = window.matchMedia('(max-width: 768px)');
+  if (windowSize.matches) {
+    console.log('768px');
     _closeWhenLinkClicked();
   }
-  
 };
 
-const _closeWhenLinkClicked = () =>{
-  const navbarLinks = document.querySelectorAll('navbar-item');
-  console.log(navbarLinks);
-  navbarLinks.forEach(navbarLink => {
-      navbarLink.addEventListener('click', () => {
-        document.querySelector('.burger').click();
-      });
-  });
-}
 export default navSlide;
