@@ -13,6 +13,7 @@ const animateAboutPage = () => {
 };
 
 const animateLoading = () => {
+  _scrollToTop();
   gsap.from('.round', {
     duration: 1, opacity: 0, y: '100px', stagger: 0.2, repeat: -1, yoyo: true,
   });

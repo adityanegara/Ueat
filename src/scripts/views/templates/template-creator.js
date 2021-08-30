@@ -85,7 +85,18 @@ const createDetailRestaurantTemplate = (restaurant) => `
       <div class="review-list">
         ${_renderReviews(restaurant.customerReviews)}
       </div>
-   
+      <div class="form-group">
+        <p>Give Review</p>
+        <div class="form form-name">
+          <input type="text" id="give-review-name" class="form__input" autocomplete="off" placeholder=" ">
+          <label for="give-review-name" class="form__label">Name</label>
+        </div>
+        <div class="form form-review">
+          <input type="text" id="give-review-review" class="form__input" autocomplete="off" placeholder=" ">
+          <label for="give-review-review" class="form__label">Review</label>
+        </div>
+        <button aria-label="create review button" class="give-review-button">Create Review</button>
+    </div>
     </div>
   `;
 
