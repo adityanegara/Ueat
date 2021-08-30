@@ -28,7 +28,7 @@ const renderMenus = (menus) => {
   return menusElement;
 };
 
-const _renderReviews = (reviews) => {
+const renderReviews = (reviews) => {
   let reviewsElement = ``;
   reviews.forEach((review) => {
     reviewsElement
@@ -83,7 +83,7 @@ const createDetailRestaurantTemplate = (restaurant) => `
     <div class="restaurant-detail-reviews">
       <p class="headline">Reviews</p>
       <div class="review-list">
-        ${_renderReviews(restaurant.customerReviews)}
+        ${renderReviews(restaurant.customerReviews)}
       </div>
       <div class="form-group">
         <p>Give Review</p>
@@ -122,4 +122,5 @@ export {
   createRestaurantTemplate,
   createDetailRestaurantTemplate,
   renderMenus,
+  renderReviews,
 };
