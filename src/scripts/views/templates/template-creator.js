@@ -23,7 +23,7 @@ const _renderCategories = (categories) => {
 const renderMenus = (menus) => {
   let menusElement = ``;
   menus.forEach((menu, i) => {
-    menusElement += `<li>${i + 1}. ${menu.name}</li>`;
+    menusElement += `<li tabindex="0">${i + 1}. ${menu.name}</li>`;
   });
   return menusElement;
 };
@@ -34,33 +34,45 @@ const renderReviews = (reviews) => {
     reviewsElement
     += `<div class="review">
       <div class="reviewer-avatar">
-        <img class="reviewer-avatar"  src="./img/avatar.svg" alt="">
+        <img tabindex="0" class="reviewer-avatar"  src="./img/avatar.svg" alt="reviewer-avatar">
       </div>
     
-      <p class="reviewer-review" >
+      <p tabindex="0" class="reviewer-review" >
         <span class="reviewer-name">${review.name}</span> :  
           ${review.review}
       </p>
-      <p class="reviewer-date">Reviewed at : ${review.date}</p>
+      <p tabindex="0" class="reviewer-date">Reviewed at : ${review.date}</p>
   </div>`;
   });
   return reviewsElement;
 };
 const createDetailRestaurantTemplate = (restaurant) => `
     <div class="restaurant-detail-image">
-      <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="">
+      <img tabindex="0" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="restaurant detail image">
     </div>
     <div class="restaurant-detail-information">
-      <div class="restaurant-detail-name">${restaurant.name}</div>
+      <div class="restaurant-detail-name">
+        <p tabindex="0">${restaurant.name}</p>
+      </div>
       <div class="restaurant-detail-description">
-       ${restaurant.description}
+        <p tabindex="0">${restaurant.description}</p>
       </div>
       <div class="restaurant-detail-location">
-        <div class="restaurant-detail-city">City : ${restaurant.city}</div>
-        <div class="restaurant-detail-address">Address : ${restaurant.address}</div>
+        <div class="restaurant-detail-city">
+          <p tabindex="0">
+            City : ${restaurant.city}
+          </p>
+        </div>
+        <div class="restaurant-detail-address">
+          <p tabindex="0">
+            Address : ${restaurant.address}
+          </p>
+        </div>
       </div>
       <div class="restaurant-detail-categories">
-        Categories : ${_renderCategories(restaurant.categories)}
+        <p tabindex="0">
+          Categories : ${_renderCategories(restaurant.categories)}
+        </p>
       </div>
     </div>
     <div class="restaurant-detail-menu">
@@ -81,12 +93,12 @@ const createDetailRestaurantTemplate = (restaurant) => `
     </div>
   
     <div class="restaurant-detail-reviews">
-      <p class="headline">Reviews</p>
+      <p tabindex="0" class="headline">Reviews</p>
       <div class="review-list">
         ${renderReviews(restaurant.customerReviews)}
       </div>
       <div class="form-group">
-        <p>Give Review</p>
+        <p tabindex="0">Give Review</p>
         <div class="review-warning  ">
           <p class="review-warning-text">Name field is required!</p>
         </div>
@@ -104,15 +116,15 @@ const createDetailRestaurantTemplate = (restaurant) => `
   `;
 
 const createRestaurantTemplate = (restaurant) => `<div class="restaurant">
-                <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" 
+                <img tabindex="0" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" 
                 alt="restaurant image ${restaurant.name}">
-                <p class="restaurant-name">${restaurant.name}</p>
-                <p class="restaurant-description">
+                <p tabindex="0"  class="restaurant-name">${restaurant.name}</p>
+                <p tabindex="0"  class="restaurant-description">
                     ${restaurant.description}
                 </p>
                 <div class="flex">
-                    <p class="restaurant-rating">Rating : ${restaurant.rating}</p>
-                    <p class="restaurant-city">City : ${restaurant.city}</p>
+                    <p tabindex="0" class="restaurant-rating">Rating : ${restaurant.rating}</p>
+                    <p tabindex="0"   class="restaurant-city">City : ${restaurant.city}</p>
                 </div> 
                 <a class="restaurant-detail-link" href="${`/#/detail/${restaurant.id}`}">Detail</a>
             </div>`;
