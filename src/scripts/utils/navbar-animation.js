@@ -12,7 +12,6 @@ const animateBurger = (navElement, navLinksElement, burgerElement) => {
 
 const _closeWhenLinkClicked = () => {
   const navbarLinks = document.querySelectorAll('navbar-item');
-  console.log(navbarLinks);
   navbarLinks.forEach((navbarLink) => {
     navbarLink.addEventListener('click', () => {
       document.querySelector('.burger').click();
@@ -29,7 +28,6 @@ const navSlide = () => {
   });
   const windowSize = window.matchMedia('(max-width: 768px)');
   if (windowSize.matches) {
-    console.log('768px');
     _closeWhenLinkClicked();
   }
 };

@@ -5,6 +5,7 @@ const path = require('path');
 module.exports = {
   entry: {
     vendor: path.resolve(__dirname, 'src/scripts/vendor/gsap.js'),
+    serviceWorker: path.resolve(__dirname, 'src/scripts/serviceWorker.js'),
     main: path.resolve(__dirname, 'src/scripts/index.js'),
   },
   plugins: [

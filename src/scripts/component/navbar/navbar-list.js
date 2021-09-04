@@ -2,7 +2,6 @@ import './navbar-item';
 
 class NavbarList extends HTMLElement {
   set navbarLinks(navbarLinks) {
-    console.log('set');
     this._navbarLinks = navbarLinks;
     this.render();
   }
