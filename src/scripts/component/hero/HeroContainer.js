@@ -19,7 +19,7 @@ class HeroSection extends HTMLElement {
         <h2 tabindex="0">${this.description}</h2>
       </div>
       <div class="download-button">
-        <button aria-label="Download Now Button ">${this.buttonCaption}</button>
+        <button id="download-button" aria-label="Download Now Button ">${this.buttonCaption}</button>
       </div>`;
   }
 }
