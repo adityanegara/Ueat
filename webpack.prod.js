@@ -12,9 +12,8 @@ module.exports = merge(common, {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[name].[hash][ext]',
   },
-  plugins: [new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }), new CleanWebpackPlugin()],
+  plugins: [new MiniCssExtractPlugin({ filename: '[name].css' }), new CleanWebpackPlugin()],
   module: {
     rules: [
       {
