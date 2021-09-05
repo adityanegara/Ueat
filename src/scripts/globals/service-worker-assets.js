@@ -4,6 +4,7 @@ const serviceWorkerAssets = [
   '/main.css',
   '/main.js',
   '/vendor.js',
+  '/fontawesome.js',
   '/icon/ueat_16x16.png',
   '/icon/ueat_32x32.png',
   '/icon/ueat_48x48 - 1.png',

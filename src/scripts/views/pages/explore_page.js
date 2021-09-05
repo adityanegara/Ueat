@@ -17,7 +17,6 @@ const ExplorePage = {
     loadingAnimation.innerHTML = createLoadingTemplate();
     animateLoading();
     const restaurants = await RestaurantSource.restaurantList();
-    console.log(restaurants);
     if (restaurants) {
       loadingAnimation.innerHTML = '';
       restaurants.forEach((restaurant) => {

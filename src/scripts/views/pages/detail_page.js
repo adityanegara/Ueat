@@ -1,8 +1,10 @@
 import { animateLoading } from '../../utils/page-animation';
 import UrlParser from '../../routes/url-parser';
 import RestaurantSource from '../../model/restaurant-source';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
 import {
-  createLoadingTemplate, createDetailRestaurantTemplate, renderMenus, renderReviews,
+  createLoadingTemplate, createDetailRestaurantTemplate,
+  renderMenus, renderReviews,
 } from '../templates/template-creator';
 
 const DetailPage = {
@@ -10,7 +12,8 @@ const DetailPage = {
   async render() {
     return `
         <div class="loading-animation"></div>
-        <div class="restaurant-detail"></div>`;
+        <div class="restaurant-detail"></div>
+        <div id="likeButtonContainer"></div>`;
   },
   async afterRender() {
     const loadingAnimation = document.querySelector('.loading-animation');
@@ -23,6 +26,10 @@ const DetailPage = {
     if (response !== false) {
       loadingAnimation.innerHTML = '';
       const { restaurant } = response;
+      LikeButtonPresenter.init({
+        likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        restaurant,
+      });
       restaurantDetailContainer.innerHTML = createDetailRestaurantTemplate(restaurant);
       this._menusClick(restaurant);
       this._giveReview(restaurant.id);
